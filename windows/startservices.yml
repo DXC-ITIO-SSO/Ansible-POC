@@ -1,0 +1,7 @@
+me: Starting windows services
+  hosts: windows
+  tasks:
+    - name: starting Spooler services
+      win_service:
+        name: Spooler
+        state: started
