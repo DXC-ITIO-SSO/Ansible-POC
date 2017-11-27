@@ -1,0 +1,8 @@
+---
+- name: Stopped windows services
+  hosts: windows
+  tasks: 
+    - name: stopping Spooler services
+      win_service:
+        name: Spooler
+        state: stopped
